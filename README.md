@@ -6,7 +6,7 @@ recorded — turning memory-and-handwritten-notes debriefs into something concre
 
 Built for the Indigo Kite Labs round-two technical exercise.
 
-> **Live demo:** _(added after deploy)_
+> **Live demo:** https://simulation-debrief.vercel.app
 >
 > **Prototype only — not clinical guidance.** The rule-of-thumb flags are a teaching aid.
 

@@ -27,7 +27,9 @@ This distinction is requested **twice** in the brief. It is the spine of the bui
 - [x] Build data model + calc engine (`src/lib/types.ts`, `metrics.ts`, `format.ts`; verified on SIM001)
 - [x] Build review UI (case-switcher + session header + metrics + timeline + AI debrief; all tier-tagged)
 - [x] Author cases 2 (delayed response + instructor notes) & 3 (re-arrest + vitals); optional-stream panels render
-- [ ] Write graded README + deploy to Vercel
+- [x] Write graded README
+- [x] Push to private repo: od-lan-enterprises/simulation-debrief
+- [x] Deploy to Vercel: https://simulation-debrief.vercel.app (production, public, GitHub-connected)
 
 ## Stack (decided)
 Next.js 16 (App Router) · TypeScript · Tailwind 4 · shadcn/ui (**Base UI** primitives,
