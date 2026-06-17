@@ -9,7 +9,7 @@ export const sim001: SessionData = {
   session: {
     id: "SIM001",
     durationSeconds: 720,
-    title: "Adult VF arrest — textbook run",
+    title: "Textbook run",
     scenarioType: "Adult ALS — VF cardiac arrest",
   },
   participants: [

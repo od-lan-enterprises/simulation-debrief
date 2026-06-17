@@ -70,6 +70,19 @@ export function TierTag({
   );
 }
 
+/**
+ * Marks a panel fed by a data stream the brief lists as "future" (vitals,
+ * instructor notes, …). Signals the schema already absorbs it — the design
+ * evolving, shown rather than described.
+ */
+export function FutureStreamBadge() {
+  return (
+    <span className="inline-flex items-center rounded-full border border-dashed border-border px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+      Future stream
+    </span>
+  );
+}
+
 /** Explains the colour code once, near the top of the page. */
 export function ProvenanceLegend() {
   const order: ProvenanceTier[] = ["source", "calculated", "ai"];

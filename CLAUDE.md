@@ -26,7 +26,7 @@ This distinction is requested **twice** in the brief. It is the spine of the bui
 - [x] Add shadcn/ui (Base UI primitives) + clinical slate/teal palette + tier tokens
 - [x] Build data model + calc engine (`src/lib/types.ts`, `metrics.ts`, `format.ts`; verified on SIM001)
 - [x] Build review UI (case-switcher + session header + metrics + timeline + AI debrief; all tier-tagged)
-- [ ] Author scenario cases 2 (clear-failure) & 3 (ambiguous)
+- [x] Author cases 2 (delayed response + instructor notes) & 3 (re-arrest + vitals); optional-stream panels render
 - [ ] Write graded README + deploy to Vercel
 
 ## Stack (decided)

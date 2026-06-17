@@ -15,6 +15,8 @@ import { SessionHeader } from "./session-header";
 import { MetricsPanel } from "./metrics-panel";
 import { Timeline } from "./timeline";
 import { AiDebrief } from "./ai-debrief";
+import { InstructorNotes } from "./instructor-notes";
+import { VitalsPanel } from "./vitals-panel";
 
 export function SessionReview({ cases }: { cases: SessionData[] }) {
   const defaultId = cases[0]?.session.id;
@@ -59,6 +61,7 @@ export function SessionReview({ cases }: { cases: SessionData[] }) {
             <TabsContent
               key={c.session.id}
               value={c.session.id}
+              keepMounted
               className="space-y-4"
             >
               <SessionHeader data={c} />
@@ -67,6 +70,14 @@ export function SessionReview({ cases }: { cases: SessionData[] }) {
                 <Timeline data={c} />
                 {c.ai && <AiDebrief debrief={c.ai} />}
               </div>
+              {(c.instructorNotes?.length || c.vitals?.length) && (
+                <div className="grid gap-4 lg:grid-cols-2">
+                  {c.instructorNotes?.length ? (
+                    <InstructorNotes notes={c.instructorNotes} />
+                  ) : null}
+                  {c.vitals?.length ? <VitalsPanel vitals={c.vitals} /> : null}
+                </div>
+              )}
             </TabsContent>
           );
         })}
