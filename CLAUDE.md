@@ -22,7 +22,8 @@ This distinction is requested **twice** in the brief. It is the spine of the bui
 ## Current status
 - [x] Read brief, agreed approach (see `docs/decisions.md`)
 - [x] Project memory / docs scaffolded
-- [ ] Scaffold Next.js app
+- [x] Scaffold Next.js app (Next 16 + React 19 + Tailwind 4 + TS; builds clean)
+- [ ] Add shadcn/ui + clinical palette
 - [ ] Build data model + calc engine
 - [ ] Build review UI (timeline + metrics + AI debrief card)
 - [ ] Author scenario cases

@@ -73,3 +73,13 @@ strategy lives in `/notes`, which is gitignored and excluded from the deliverabl
 **Why:** Lets a fresh session pick up the specifics instantly and travels with the repo;
 keeps internal framing out of what Indigo Kite receives.
 **Rejected:** Single scratch file (doesn't auto-load, mixes client-facing with internal).
+
+## 2026-06-17 — Locked: 3 cases + moderate/grounded clinical depth
+**Decision:** Confirmed the case set at **3** (Textbook / Clear-failure / Messy-ambiguous)
+and the clinical-metrics level at **moderate/grounded**: compute meaningful time-metrics with
+rule-of-thumb green/amber flags (named constants in deterministic code) + a visible
+"prototype, not clinical guidance" disclaimer.
+**Why:** Best variance-to-effort ratio within the 1–2 hr budget; strong domain signal without
+claiming medical authority we'd have to defend in the interview.
+**Rejected:** 2/5/1 cases (see prior block); Light depth (reads as a smarter timeline);
+Heavy named-standard ACLS/ALS scoring (authority risk + any wrong number is a liability).
