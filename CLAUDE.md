@@ -24,7 +24,7 @@ This distinction is requested **twice** in the brief. It is the spine of the bui
 - [x] Project memory / docs scaffolded
 - [x] Scaffold Next.js app (Next 16 + React 19 + Tailwind 4 + TS; builds clean)
 - [x] Add shadcn/ui (Base UI primitives) + clinical slate/teal palette + tier tokens
-- [ ] Build data model + calc engine
+- [x] Build data model + calc engine (`src/lib/types.ts`, `metrics.ts`, `format.ts`; verified on SIM001)
 - [ ] Build review UI (timeline + metrics + AI debrief card)
 - [ ] Author scenario cases
 - [ ] Write graded README + deploy to Vercel
