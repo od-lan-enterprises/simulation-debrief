@@ -25,8 +25,8 @@ This distinction is requested **twice** in the brief. It is the spine of the bui
 - [x] Scaffold Next.js app (Next 16 + React 19 + Tailwind 4 + TS; builds clean)
 - [x] Add shadcn/ui (Base UI primitives) + clinical slate/teal palette + tier tokens
 - [x] Build data model + calc engine (`src/lib/types.ts`, `metrics.ts`, `format.ts`; verified on SIM001)
-- [ ] Build review UI (timeline + metrics + AI debrief card)
-- [ ] Author scenario cases
+- [x] Build review UI (case-switcher + session header + metrics + timeline + AI debrief; all tier-tagged)
+- [ ] Author scenario cases 2 (clear-failure) & 3 (ambiguous)
 - [ ] Write graded README + deploy to Vercel
 
 ## Stack (decided)
