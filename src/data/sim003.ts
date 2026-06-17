@@ -14,6 +14,7 @@ export const sim003: SessionData = {
     durationSeconds: 600,
     title: "Re-arrest & recovery",
     scenarioType: "Adult ALS — VF arrest with re-arrest",
+    date: "2026-06-03",
   },
   participants: [
     { id: "P1", role: "Team Leader" },

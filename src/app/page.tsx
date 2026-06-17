@@ -1,6 +1,14 @@
-import { cases } from "@/data";
-import { SessionReview } from "@/components/session-review";
+import { orderedCases, student } from "@/data";
+import { deriveTrends } from "@/lib/trends";
+import { ParticipantOverview } from "@/components/participant-overview";
 
 export default function Home() {
-  return <SessionReview cases={cases} />;
+  const trends = deriveTrends(orderedCases);
+  return (
+    <ParticipantOverview
+      student={student}
+      sessions={orderedCases}
+      trends={trends}
+    />
+  );
 }

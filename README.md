@@ -30,9 +30,15 @@ clinically meaningful timings (time to CPR, time to first shock, time to ROSC, �
 echoing the timeline. The AI tier is a **pre-baked debrief** per case — grounded in those
 calculated facts, but clearly marked as generated and advisory.
 
-To show this responds to *data* and isn't hardcoded, there are **three contrasting cases** behind a
-switcher: a textbook run, a delayed/failed run, and an ambiguous re-arrest. The same engine
-produces different metrics, flags, and AI tone for each.
+To show this responds to *data* and isn't hardcoded, there are **three contrasting sessions** — a
+textbook run, a delayed/failed run, and an ambiguous re-arrest. The same engine produces different
+metrics, flags, and AI tone for each.
+
+The app has two levels, matching how an instructor actually works: a **learner overview** (home)
+lists a participant's sessions and shows a **cross-session trend** plus an **AI progress summary**,
+and each session links to its **full review**. The trend is the same calculated tier one level up
+(deterministic — "time to CPR: 48s → 15s → 17s"); the progress summary is the AI tier. Routes:
+`/` (overview) and `/sessions/[id]` (review).
 
 ## Deterministic vs. AI-assisted (in a production version)
 

@@ -83,3 +83,14 @@ rule-of-thumb green/amber flags (named constants in deterministic code) + a visi
 claiming medical authority we'd have to defend in the interview.
 **Rejected:** 2/5/1 cases (see prior block); Light depth (reads as a smarter timeline);
 Heavy named-standard ACLS/ALS scoring (authority risk + any wrong number is a liability).
+
+## 2026-06-17 — Two-level IA: learner overview → session detail
+**Decision:** Home is a **participant overview** (one mock learner, their sessions as cards, a
+calculated cross-session **trend strip**, and an **AI progress summary**). Each card routes to
+`/sessions/[id]` for the full review. The case-switcher tabs are retired.
+**Why:** Reflects the real instructor workflow (tracking a learner over time), and the additions
+reinforce the same three tiers one level up — the trend is **calculated** (deterministic), the
+progress summary is **AI**. Adds product value without diluting the per-session review.
+**Rejected:** 3-level student-selection screen (a list of one = empty hierarchy); breadcrumb-only
+(no longitudinal payoff); leaving the single-screen tabs (misses the over-time workflow). Skipped a
+roster page — a breadcrumb implies it instead of building an empty selector.

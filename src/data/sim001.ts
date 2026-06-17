@@ -11,6 +11,7 @@ export const sim001: SessionData = {
     durationSeconds: 720,
     title: "Textbook run",
     scenarioType: "Adult ALS — VF cardiac arrest",
+    date: "2026-06-12",
   },
   participants: [
     { id: "P1", role: "Team Leader" },

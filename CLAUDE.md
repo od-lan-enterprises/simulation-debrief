@@ -30,6 +30,7 @@ This distinction is requested **twice** in the brief. It is the spine of the bui
 - [x] Write graded README
 - [x] Push to private repo: od-lan-enterprises/simulation-debrief
 - [x] Deploy to Vercel: https://simulation-debrief.vercel.app (production, public, GitHub-connected)
+- [x] Add two-level IA: learner overview (`/`, trend + AI progress) → session detail (`/sessions/[id]`)
 
 ## Stack (decided)
 Next.js 16 (App Router) · TypeScript · Tailwind 4 · shadcn/ui (**Base UI** primitives,

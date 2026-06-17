@@ -24,6 +24,20 @@ export interface Session {
   durationSeconds: number;
   title?: string; // human label for the case, e.g. "Adult VF arrest — textbook"
   scenarioType?: string; // e.g. "Adult ALS — VF cardiac arrest"
+  date?: string; // ISO YYYY-MM-DD — when the session was run (for chronology)
+}
+
+/**
+ * A learner whose sessions are reviewed over time. In production this sits under
+ * a roster; here there is one mock student. `aiProgression` is a pre-baked,
+ * AI-tier summary of how the learner is trending across their sessions.
+ */
+export interface Student {
+  id: string;
+  name: string;
+  descriptor: string; // e.g. "Paramedic trainee"
+  sessionIds: string[]; // chronological (oldest → newest)
+  aiProgression: string;
 }
 
 export interface Participant {
