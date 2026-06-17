@@ -89,8 +89,8 @@ Heavy named-standard ACLS/ALS scoring (authority risk + any wrong number is a li
 calculated cross-session **trend strip**, and an **AI progress summary**). Each card routes to
 `/sessions/[id]` for the full review. The case-switcher tabs are retired.
 **Why:** Reflects the real instructor workflow (tracking a learner over time), and the additions
-reinforce the same three tiers one level up — the trend is **calculated** (deterministic), the
+reinforce the same three tiers one level up, the trend is **calculated** (deterministic), the
 progress summary is **AI**. Adds product value without diluting the per-session review.
 **Rejected:** 3-level student-selection screen (a list of one = empty hierarchy); breadcrumb-only
 (no longitudinal payoff); leaving the single-screen tabs (misses the over-time workflow). Skipped a
-roster page — a breadcrumb implies it instead of building an empty selector.
+roster page, a breadcrumb implies it instead of building an empty selector.

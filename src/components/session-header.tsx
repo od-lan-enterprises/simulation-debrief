@@ -28,7 +28,7 @@ function Fact({
   );
 }
 
-/** Source-tier session facts — straight from the simulator, never altered. */
+/** Source-tier session facts, straight from the simulator, never altered. */
 export function SessionHeader({ data }: { data: SessionData }) {
   const { session, participants } = data;
   return (

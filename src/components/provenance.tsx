@@ -38,7 +38,7 @@ export const TIER_META: Record<
   ai: {
     label: "AI suggestions",
     short: "AI",
-    description: "generated — advisory",
+    description: "generated, advisory",
     dot: "bg-tier-ai",
     text: "text-tier-ai",
     soft: "bg-tier-ai-soft",
@@ -72,7 +72,7 @@ export function TierTag({
 
 /**
  * Marks a panel fed by a data stream the brief lists as "future" (vitals,
- * instructor notes, …). Signals the schema already absorbs it — the design
+ * instructor notes, …). Signals the schema already absorbs it: the design
  * evolving, shown rather than described.
  */
 export function FutureStreamBadge() {
@@ -95,7 +95,7 @@ export function ProvenanceLegend() {
           <span key={t} className="inline-flex items-center gap-1.5">
             <span className={cn("h-2 w-2 rounded-full", m.dot)} />
             <span className="font-medium text-foreground">{m.label}</span>
-            <span className="text-muted-foreground">— {m.description}</span>
+            <span className="text-muted-foreground">: {m.description}</span>
           </span>
         );
       })}

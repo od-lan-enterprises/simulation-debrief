@@ -7,13 +7,13 @@ each maps to what they actually grade.
 ## The scenario
 Healthcare simulation startup. After each sim session, instructors run a **debrief**:
 *what happened, what went well, what could be improved.* Today this is done from memory +
-handwritten notes. Build the first prototype of a tool to **review a completed session** —
+handwritten notes. Build the first prototype of a tool to **review a completed session**,
 a digital "flight recorder."
 
 ## Hard requirements (must hit)
 1. **A web application** that helps an instructor review a simulation.
-2. Works from **structured event data only** — no video / audio / images stored.
-3. **One AI-assisted (or simulated-AI) feature** — e.g. debrief summary, suggested
+2. Works from **structured event data only**, no video / audio / images stored.
+3. **One AI-assisted (or simulated-AI) feature**, e.g. debrief summary, suggested
    discussion points, instructor prompts, or "moments worth reviewing." *Need not call a
    real AI API.*
 4. **Clearly distinguish** source events vs calculated facts vs AI-generated suggestions.
@@ -51,4 +51,4 @@ instructor notes · AI-generated observations. → Drives our **extensible schem
 | UI choices | Restrained clinical UI (shadcn); provenance made visually obvious |
 | How you used AI | This build (Claude Code) + README "AI tools" section, honestly |
 | Trade-offs | Decision log records what we rejected and why |
-| What you'd improve | README "what next" — wired from the future-data streams |
+| What you'd improve | README "what next", wired from the future-data streams |

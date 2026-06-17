@@ -1,8 +1,8 @@
 /**
- * Cross-session trends — still the CALCULATED tier, one level up. Pure function
+ * Cross-session trends: still the CALCULATED tier, one level up. Pure function
  * of the per-session metrics: how a tracked metric moves across a learner's
  * sessions in chronological order. No AI: the numbers and the direction are
- * deterministic. (The natural-language read of the trend is the AI tier — see
+ * deterministic. (The natural-language read of the trend is the AI tier, see
  * the student's `aiProgression`.)
  */
 

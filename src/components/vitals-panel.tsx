@@ -11,7 +11,7 @@ import {
 import { FutureStreamBadge, TierTag } from "./provenance";
 
 /**
- * Simulator vital signs — source-tier data (it comes from the simulator, like
+ * Simulator vital signs: source-tier data (it comes from the simulator, like
  * events), rendered raw with no judgement applied. Only shown when a case
  * carries a `vitals` stream.
  */

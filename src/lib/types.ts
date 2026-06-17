@@ -1,7 +1,7 @@
 /**
  * Domain types for the simulation-debrief prototype.
  *
- * The whole app is organised around PROVENANCE — every piece of information
+ * The whole app is organised around PROVENANCE: every piece of information
  * shown belongs to exactly one tier:
  *   - "source"     raw events received from the simulator (ground truth)
  *   - "calculated" facts derived deterministically from source events
@@ -22,9 +22,9 @@ export type FlagStatus = "good" | "warn" | "neutral";
 export interface Session {
   id: string;
   durationSeconds: number;
-  title?: string; // human label for the case, e.g. "Adult VF arrest — textbook"
-  scenarioType?: string; // e.g. "Adult ALS — VF cardiac arrest"
-  date?: string; // ISO YYYY-MM-DD — when the session was run (for chronology)
+  title?: string; // human label for the case, e.g. "Adult VF arrest, textbook"
+  scenarioType?: string; // e.g. "Adult ALS: VF cardiac arrest"
+  date?: string; // ISO YYYY-MM-DD, when the session was run (for chronology)
 }
 
 /**
@@ -100,7 +100,7 @@ export interface CprQualitySample {
 }
 
 export interface InstructorNote {
-  time?: number; // optional — some notes are session-wide
+  time?: number; // optional, some notes are session-wide
   author?: string;
   text: string;
 }
@@ -112,7 +112,7 @@ export interface SessionData {
   participants: Participant[];
   events: SimEvent[];
 
-  // Future streams — a case may include none, some, or all of these.
+  // Future streams: a case may include none, some, or all of these.
   vitals?: VitalSample[];
   cprQuality?: CprQualitySample[];
   instructorNotes?: InstructorNote[];
@@ -169,6 +169,6 @@ export interface AiDebrief {
   summary: string;
   discussionPoints: AiDiscussionPoint[];
   momentsToReview: AiMomentToReview[];
-  /** Always true here — a reminder this content is generated/advisory. */
+  /** Always true here: a reminder this content is generated/advisory. */
   generated: true;
 }

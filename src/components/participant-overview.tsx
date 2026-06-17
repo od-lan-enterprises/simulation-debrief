@@ -6,7 +6,7 @@ import { ProgressionNote } from "./progression-note";
 import { SessionCard } from "./session-card";
 
 /**
- * The learner overview — the app's home. One mock student, their sessions, and a
+ * The learner overview: the app's home. One mock student, their sessions, and a
  * cross-session view: a calculated trend strip and an AI progress summary. Each
  * session card routes into the full review. (A roster sits above this in
  * production; the breadcrumb implies it without building an empty selector.)

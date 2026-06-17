@@ -1,11 +1,11 @@
 import type { SessionData } from "@/lib/types";
 
 /**
- * Case 3 — "Re-arrest & recovery". A deliberately ambiguous run: ROSC is achieved
+ * Case 3: "Re-arrest & recovery". A deliberately ambiguous run: ROSC is achieved
  * quickly but not sustained, the patient re-arrests into a non-shockable rhythm,
  * and a second ROSC follows. Carries a `vitals` stream (simulator source data) so
  * the deterioration is visible. The pre-baked AI output is intentionally more
- * hedged here — it raises questions rather than verdicts, and even flags a limit
+ * hedged here: it raises questions rather than verdicts, and even flags a limit
  * of the deterministic metrics (which only capture the first ROSC).
  */
 export const sim003: SessionData = {
@@ -13,7 +13,7 @@ export const sim003: SessionData = {
     id: "SIM003",
     durationSeconds: 600,
     title: "Re-arrest & recovery",
-    scenarioType: "Adult ALS — VF arrest with re-arrest",
+    scenarioType: "Adult ALS: VF arrest with re-arrest",
     date: "2026-06-03",
   },
   participants: [
@@ -45,10 +45,10 @@ export const sim003: SessionData = {
   ai: {
     generated: true,
     summary:
-      "This run is harder to read than a clean arrest. ROSC was achieved quickly (1:50 from recognition), but it was not sustained — the patient re-arrested around 4:00 into a non-shockable rhythm before a second ROSC at 7:00. The most useful debrief here is less about timings and more about how the team noticed and responded to the deterioration.",
+      "This run is harder to read than a clean arrest. ROSC was achieved quickly (1:50 from recognition), but it was not sustained. The patient re-arrested around 4:00 into a non-shockable rhythm before a second ROSC at 7:00. The most useful debrief here is less about timings and more about how the team noticed and responded to the deterioration.",
     discussionPoints: [
       {
-        text: "The vital signs were trending down before the re-arrest — falling SpO₂ and blood pressure. Were these signs noticed, and what might have prompted earlier action?",
+        text: "The vital signs were trending down before the re-arrest: falling SpO₂ and blood pressure. Were these signs noticed, and what might have prompted earlier action?",
         atTime: 235,
       },
       {
@@ -66,7 +66,7 @@ export const sim003: SessionData = {
       },
       {
         time: 240,
-        reason: "Re-arrest after an initial ROSC — the turning point of this case.",
+        reason: "Re-arrest after an initial ROSC: the turning point of this case.",
       },
       {
         time: 248,

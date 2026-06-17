@@ -11,7 +11,7 @@ import {
 import { FutureStreamBadge } from "./provenance";
 
 /**
- * Instructor notes — human-entered observations. Deliberately styled as neither
+ * Instructor notes: human-entered observations. Deliberately styled as neither
  * source, calculated, nor AI: it's a distinct, fourth kind of input (subjective
  * human judgement), kept visually separate so the three machine tiers stay
  * unambiguous. Only shown when a case carries an `instructorNotes` stream.
@@ -27,7 +27,7 @@ export function InstructorNotes({ notes }: { notes: InstructorNote[] }) {
               Instructor notes
             </CardTitle>
             <CardDescription>
-              Human observations — not machine-recorded or AI-generated.
+              Human observations, not machine-recorded or AI-generated.
             </CardDescription>
           </div>
           <FutureStreamBadge />
@@ -44,7 +44,7 @@ export function InstructorNotes({ notes }: { notes: InstructorNote[] }) {
                 {n.text}
                 {n.author && (
                   <span className="mt-0.5 block text-xs text-muted-foreground">
-                    — {n.author}
+                    Noted by {n.author}
                   </span>
                 )}
               </p>

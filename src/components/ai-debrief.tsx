@@ -13,7 +13,7 @@ import { TierTag } from "./provenance";
 /**
  * AI-tier panel. In this prototype the content is pre-baked per case (no live
  * API), but it is grounded in the calculated facts and clearly marked as
- * generated, advisory output — distinct from source and calculated tiers.
+ * generated, advisory output, distinct from source and calculated tiers.
  */
 export function AiDebrief({ debrief }: { debrief: AiDebrief }) {
   return (
@@ -26,7 +26,7 @@ export function AiDebrief({ debrief }: { debrief: AiDebrief }) {
               AI-assisted debrief
             </CardTitle>
             <CardDescription>
-              Suggested talking points for the instructor — not a verdict.
+              Suggested talking points for the instructor, not a verdict.
             </CardDescription>
           </div>
           <TierTag tier="ai" />
@@ -77,8 +77,8 @@ export function AiDebrief({ debrief }: { debrief: AiDebrief }) {
         )}
 
         <p className="border-t pt-3 text-xs text-muted-foreground">
-          Generated, advisory content. The instructor decides what matters —
-          this is a prompt for discussion, not clinical guidance.
+          Generated, advisory content. The instructor decides what matters.
+          This is a prompt for discussion, not clinical guidance.
         </p>
       </CardContent>
     </Card>

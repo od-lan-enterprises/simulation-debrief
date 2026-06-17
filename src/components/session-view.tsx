@@ -7,7 +7,7 @@ import { AiDebrief } from "./ai-debrief";
 import { InstructorNotes } from "./instructor-notes";
 import { VitalsPanel } from "./vitals-panel";
 
-/** The full review of a single session — composed from the tier-tagged panels. */
+/** The full review of a single session, composed from the tier-tagged panels. */
 export function SessionView({ data }: { data: SessionData }) {
   const facts = deriveMetrics(data);
   return (

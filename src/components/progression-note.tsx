@@ -10,7 +10,7 @@ import { TierTag } from "./provenance";
 
 /**
  * AI-tier read of the learner's progress. Pre-baked here; in production it would
- * be generated from the calculated trends. Clearly advisory — not an assessment.
+ * be generated from the calculated trends. Clearly advisory, not an assessment.
  */
 export function ProgressionNote({ text }: { text: string }) {
   return (
@@ -23,7 +23,7 @@ export function ProgressionNote({ text }: { text: string }) {
               AI progress summary
             </CardTitle>
             <CardDescription>
-              How this learner is trending — for the instructor to weigh.
+              How this learner is trending, for the instructor to weigh.
             </CardDescription>
           </div>
           <TierTag tier="ai" />
@@ -32,7 +32,7 @@ export function ProgressionNote({ text }: { text: string }) {
       <CardContent>
         <p className="text-sm leading-relaxed">{text}</p>
         <p className="mt-3 border-t pt-3 text-xs text-muted-foreground">
-          Generated from the calculated trends. Advisory — not a formal
+          Generated from the calculated trends. Advisory, not a formal
           assessment.
         </p>
       </CardContent>

@@ -1,7 +1,7 @@
 import type { SessionData } from "@/lib/types";
 
 /**
- * Case 2 — "Delayed response". A run that goes poorly: compressions start late,
+ * Case 2: "Delayed response". A run that goes poorly: compressions start late,
  * defibrillation is delayed, and no ROSC is achieved. Carries an `instructorNotes`
  * stream (human input) to show how a future data source slots in alongside the
  * source / calculated / AI tiers. Contrast this case's metrics + AI output with
@@ -12,7 +12,7 @@ export const sim002: SessionData = {
     id: "SIM002",
     durationSeconds: 600,
     title: "Delayed response",
-    scenarioType: "Adult ALS — VF cardiac arrest",
+    scenarioType: "Adult ALS: VF cardiac arrest",
     date: "2026-05-20",
   },
   participants: [
@@ -40,7 +40,7 @@ export const sim002: SessionData = {
     },
     {
       time: 98,
-      text: "Long pause before compressions — the team waited for the monitor instead of starting hands-on straight away.",
+      text: "Long pause before compressions: the team waited for the monitor instead of starting hands-on straight away.",
       author: "Instructor",
     },
     {
@@ -55,11 +55,11 @@ export const sim002: SessionData = {
       "A difficult resuscitation with several avoidable delays. Compressions did not begin until 48s after VF was recognised, and the first shock was delayed to 2:45 into the arrest. No return of spontaneous circulation was achieved during the scenario. The priorities for the debrief are early, high-quality compressions and a faster route to defibrillation.",
     discussionPoints: [
       {
-        text: "Compressions started 48s after arrest was recognised — what got in the way of going hands-on immediately?",
+        text: "Compressions started 48s after arrest was recognised. What got in the way of going hands-on immediately?",
         atTime: 98,
       },
       {
-        text: "The first shock came 2:45 after VF. Walk through the defibrillation workflow — pad placement, charging, clearing — to find where the time was lost.",
+        text: "The first shock came 2:45 after VF. Walk through the defibrillation workflow (pad placement, charging, clearing) to find where the time was lost.",
         atTime: 215,
       },
       {
@@ -69,11 +69,11 @@ export const sim002: SessionData = {
     momentsToReview: [
       {
         time: 98,
-        reason: "48s delay to first compressions — the single biggest time loss in this run.",
+        reason: "48s delay to first compressions: the single biggest time loss in this run.",
       },
       {
         time: 215,
-        reason: "First defibrillation at 2:45 from arrest — well beyond the rule-of-thumb window.",
+        reason: "First defibrillation at 2:45 from arrest: well beyond the rule-of-thumb window.",
       },
     ],
   },

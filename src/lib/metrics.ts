@@ -5,7 +5,7 @@
  * output, no I/O, no randomness, no AI. This is the deterministic heart of the
  * prototype and the reason the calculated tier can be trusted and audited.
  *
- * The rule-of-thumb thresholds below are deliberately simple, named constants —
+ * The rule-of-thumb thresholds below are deliberately simple, named constants:
  * a teaching aid for the debrief, NOT clinical guidance. Keeping them here (and
  * not in any AI layer) is exactly the point: judgements a reviewer must be able
  * to reproduce live should never be left to a model.
@@ -121,7 +121,7 @@ export function deriveMetrics(data: SessionData): DerivedFacts {
     });
   }
 
-  // Time from arrest → first adrenaline (reported, not flagged — dose timing
+  // Time from arrest to first adrenaline (reported, not flagged; dose timing
   // depends on rhythm/algorithm context we deliberately don't assert here).
   if (arrest && firstAdrenaline) {
     const dt = firstAdrenaline.time - arrest.time;
@@ -198,7 +198,7 @@ export function deriveMetrics(data: SessionData): DerivedFacts {
     });
   }
 
-  // Total scenario length — prefer declared duration, else last event time.
+  // Total scenario length: prefer declared duration, else last event time.
   const lastEvent = events[events.length - 1];
   const totalSeconds =
     data.session.durationSeconds ?? (lastEvent ? lastEvent.time : 0);

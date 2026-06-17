@@ -1,4 +1,4 @@
-/** Small, pure formatting helpers. Deterministic — no locale/time dependence. */
+/** Small, pure formatting helpers. Deterministic, no locale/time dependence. */
 
 /** Seconds → "M:SS" (e.g. 82 → "1:22"). Used for timeline clock labels. */
 export function formatClock(totalSeconds: number): string {

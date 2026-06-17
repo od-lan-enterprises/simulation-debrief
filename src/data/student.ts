@@ -11,5 +11,5 @@ export const student: Student = {
   descriptor: "Paramedic trainee",
   sessionIds: ["SIM002", "SIM003", "SIM001"], // oldest → newest
   aiProgression:
-    "Jordan's time to compressions has improved sharply across the three sessions (48s → 17s), and the first shock is coming faster too — though defibrillation timing is still a little inconsistent. The next session is worth focusing on a fast, confident path to the first shock.",
+    "Jordan's time to compressions has improved sharply across the three sessions (48s → 17s), and the first shock is coming faster too, though defibrillation timing is still a little inconsistent. The next session is worth focusing on a fast, confident path to the first shock.",
 };

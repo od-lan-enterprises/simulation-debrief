@@ -80,7 +80,7 @@ export function MetricsPanel({ facts }: { facts: DerivedFacts }) {
           <div className="space-y-1">
             <CardTitle className="text-base">Calculated facts</CardTitle>
             <CardDescription>
-              Computed deterministically from the timeline — reproducible, no AI.
+              Computed deterministically from the timeline: reproducible, no AI.
             </CardDescription>
           </div>
           <TierTag tier="calculated" />

@@ -18,8 +18,8 @@ import { TierTag } from "./provenance";
 
 /**
  * Source-tier timeline. Each row is a raw event, rendered as-is. Where the AI
- * has flagged a moment for review, a clearly-tagged AI marker sits alongside —
- * the event stays source-tier; only the flag is AI.
+ * has flagged a moment for review, a clearly-tagged AI marker sits alongside.
+ * The event stays source-tier; only the flag is AI.
  */
 export function Timeline({ data }: { data: SessionData }) {
   const events = [...data.events].sort((a, b) => a.time - b.time);

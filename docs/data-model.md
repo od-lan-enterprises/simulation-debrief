@@ -12,7 +12,7 @@ interface Session {
   id: string;
   durationSeconds: number;
   title?: string;          // human label for the case
-  scenarioType?: string;   // e.g. "Adult ALS — VF arrest"
+  scenarioType?: string;   // e.g. "Adult ALS, VF arrest"
 }
 
 interface Participant {
@@ -36,7 +36,7 @@ interface SessionData {
   participants: Participant[];
   events: SimEvent[];
 
-  // FUTURE STREAMS — all optional, all additive. Cases may omit any of these and the
+  // FUTURE STREAMS, all optional, all additive. Cases may omit any of these and the
   // UI must degrade gracefully (render only what's present).
   vitals?: VitalSample[];          // simulator vital signs over time
   cprQuality?: CprQualitySample[]; // rate/depth/recoil
@@ -69,7 +69,7 @@ All deterministic, derived purely from event timestamps:
 
 These can be flagged against simple, transparent rule-of-thumb thresholds (e.g. "compressions
 ideally within ~10s of arrest recognition"). Thresholds live in code as named constants, NOT
-in the AI layer — they must be deterministic and auditable. **Disclaimer: prototype only, not
+in the AI layer, they must be deterministic and auditable. **Disclaimer: prototype only, not
 clinical guidance.**
 
 ## Why this shape
