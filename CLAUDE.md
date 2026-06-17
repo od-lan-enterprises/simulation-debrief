@@ -23,15 +23,24 @@ This distinction is requested **twice** in the brief. It is the spine of the bui
 - [x] Read brief, agreed approach (see `docs/decisions.md`)
 - [x] Project memory / docs scaffolded
 - [x] Scaffold Next.js app (Next 16 + React 19 + Tailwind 4 + TS; builds clean)
-- [ ] Add shadcn/ui + clinical palette
+- [x] Add shadcn/ui (Base UI primitives) + clinical slate/teal palette + tier tokens
 - [ ] Build data model + calc engine
 - [ ] Build review UI (timeline + metrics + AI debrief card)
 - [ ] Author scenario cases
 - [ ] Write graded README + deploy to Vercel
 
 ## Stack (decided)
-Next.js (App Router) · TypeScript · Tailwind · shadcn/ui · deployed on Vercel.
+Next.js 16 (App Router) · TypeScript · Tailwind 4 · shadcn/ui (**Base UI** primitives,
+not Radix — note `delay` not `delayDuration` on TooltipProvider) · deployed on Vercel.
 AI feature is **pre-baked per case** — no live API call (brief permits this).
+
+## Design tokens (in `src/app/globals.css`)
+Light-default clinical theme; slate base + single medical-teal `--primary`.
+Provenance tiers are themed tokens — use the Tailwind utilities directly:
+- Source events → `bg-tier-source` / `text-tier-source` / `bg-tier-source-soft`
+- Calculated facts → `bg-tier-calculated` / `text-tier-calculated` / `…-soft`
+- AI suggestions → `bg-tier-ai` / `text-tier-ai` / `…-soft`
+- Rule-of-thumb flags → `text-flag-good` / `text-flag-warn` (+ `-soft` bg)
 
 ## Where things are
 - `docs/brief.md` — distilled requirements + how each maps to the evaluation rubric
