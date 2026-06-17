@@ -1,0 +1,33 @@
+# Internal working notes — NOT for delivery to Indigo Kite Labs
+/notes/
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js / build
+.next/
+out/
+build/
+dist/
+
+# Env
+.env
+.env*.local
+
+# Vercel
+.vercel
+
+# Misc
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.idea/
+.vscode/
+
+# Challenge brief — their document, do not redistribute
+Round Two Technical Challenge .pdf
+*.pdf
