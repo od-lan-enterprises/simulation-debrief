@@ -107,8 +107,7 @@ export default function AboutPage() {
         <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
           The thinking behind this prototype: the organising idea, the
           deterministic-versus-AI split, the key trade-offs, and how the design
-          is meant to evolve. A companion to the README, for reading before the
-          walkthrough.
+          is meant to evolve. Written to read before the walkthrough.
         </p>
       </div>
 
@@ -267,10 +266,6 @@ export default function AboutPage() {
         </CardContent>
       </Card>
 
-      <p className="text-xs text-muted-foreground">
-        Prototype only, not clinical guidance. The full append-only decision log
-        lives in <span className="font-mono">docs/decisions.md</span>.
-      </p>
     </div>
   );
 }
