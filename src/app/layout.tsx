@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -35,9 +36,17 @@ export default function RootLayout({
           <div className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6">
             <AppHeader />
             <div className="mt-6">{children}</div>
-            <footer className="mt-12 border-t pt-4 text-xs text-muted-foreground">
-              Prototype for reviewing simulated training sessions. The
-              rule-of-thumb flags are a teaching aid, not clinical guidance.
+            <footer className="mt-12 flex flex-wrap items-center justify-between gap-2 border-t pt-4 text-xs text-muted-foreground">
+              <span>
+                Prototype for reviewing simulated training sessions. The
+                rule-of-thumb flags are a teaching aid, not clinical guidance.
+              </span>
+              <Link
+                href="/about"
+                className="shrink-0 font-medium transition-colors hover:text-foreground"
+              >
+                Design notes
+              </Link>
             </footer>
           </div>
         </TooltipProvider>

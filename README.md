@@ -94,6 +94,7 @@ architecture decisions were made deliberately and are recorded in `docs/decision
 ```bash
 npm install
 npm run dev      # http://localhost:3000
+npm test         # unit tests for the metrics engine
 ```
 
 ## If I had another day
@@ -103,10 +104,13 @@ npm run dev      # http://localhost:3000
   available; let instructor notes be added in-app.
 - **Wire a real AI call** behind the same interface, passing events + calculated facts as grounding,
   so the deterministic/AI boundary stays intact.
-- **Unit tests on the metrics engine**: it's a pure function, so it's the cheapest, highest-value
-  place to lock behaviour down.
+- **Broaden the test suite**: the metrics engine already has unit tests (it's a pure function, so
+  it's the cheapest place to lock behaviour down). Next I would snapshot each case's derived facts
+  and cover the cross-session trend logic.
 - **Export/share** a debrief summary (PDF) for the instructor to take into the room.
 
 ---
 
-_Project notes and the full decision log live in `docs/`._
+_For the thinking behind the build, see **`docs/design-notes.md`** (the determinism split, key
+trade-offs, and anticipated questions), also viewable in-app at `/about`. The full append-only
+decision log lives in `docs/decisions.md`._

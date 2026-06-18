@@ -68,7 +68,6 @@ export const KNOWN_EVENT_TYPES = [
 ] as const;
 
 export type KnownEventType = (typeof KNOWN_EVENT_TYPES)[number];
-// eslint-disable-next-line @typescript-eslint/ban-types
 export type EventType = KnownEventType | (string & {});
 
 export interface SimEvent {

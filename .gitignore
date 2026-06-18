@@ -1,5 +1,6 @@
 # Internal working notes — NOT for delivery to Indigo Kite Labs
 /notes/
+interview_1_transcript_and_summary.txt
 
 # Dependencies
 node_modules/
@@ -11,6 +12,7 @@ node_modules/
 out/
 build/
 dist/
+*.tsbuildinfo
 
 # Env
 .env
